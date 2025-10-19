@@ -29,8 +29,8 @@ Compatibility is primarily determined by its dependency, [ParticleNativeAPI](htt
 To use TimelineFX in your Paper/Spigot plugin, add it as a dependency in your build system. For Maven, add the following to your `pom.xml`:
 ```xml
 <dependency>
-    <groupId>com.github.amatheo.timelinefx</groupId>
-    <artifactId>TimelineFX</artifactId>
+    <groupId>com.github.amatheo</groupId>
+    <artifactId>timelinefx</artifactId>
     <version>1.0.0</version>
 </dependency>
 ```
