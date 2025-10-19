@@ -81,12 +81,11 @@ The animation engine needs to be initialized with your plugin instance to manage
 
 It should be reused across your plugin to ensure proper ticking and resource management.
 
-> **⚠️ — Lifecycle & Single Instance:** Managing the `AnimationEngine` instance is the plugin developer's
-> responsibility. Create a single `AnimationEngine` per plugin (for example in your plugin's `onEnable`), and reuse that
-> instance across your code.
+> [!WARNING]
+> Managing the `AnimationEngine` instance is the plugin developer's responsibility.
 >
-> Running multiple `AnimationEngine` instances in the same plugin can cause duplicated ticks, increased resource usage,
-> and unexpected behaviour.
+> Create a single `AnimationEngine` per plugin (for example in your plugin's `onEnable`), and reuse that instance across
+> your code.
 
 Example initialization in your main plugin class:
 
