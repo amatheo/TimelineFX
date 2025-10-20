@@ -4,9 +4,36 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.amatheo</groupId>
+    <groupId>io.github.amatheo</groupId>
     <artifactId>timelinefx</artifactId>
     <version>1.0.0</version>
+
+    <name>TimelineFX</name>
+    <description>A declarative particle animation engine for Minecraft Paper/Spigot plugins.</description>
+    <url>https://github.com/amatheo/timelinefx</url>
+
+    <licenses>
+        <license>
+            <name>Apache 2.0</name>
+            <url>https://opensource.org/license/apache-2-0</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>amatheo</name>
+            <email>59826260+amatheo@users.noreply.github.com</email>
+            <url>https://github.com/amatheo</url>
+            <organization>io.amatheo</organization>
+            <organizationUrl>https://github.com/amatheo</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git@github.com:amatheo/timelinefx.git</connection>
+        <developerConnection>scm:git:git@github.com:amatheo/timelinefx.git</developerConnection>
+        <url>git@github.com:amatheo/timelinefx.git</url>
+    </scm>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -14,13 +41,6 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <distributionManagement>
-        <repository>
-            <id>github</id>
-            <name>GitHub amatheo Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/amatheo/TimelineFX</url>
-        </repository>
-    </distributionManagement>
 
     <repositories>
         <repository>
@@ -41,7 +61,7 @@
             <groupId>com.github.fierioziy.particlenativeapi</groupId>
             <artifactId>ParticleNativeAPI-core</artifactId>
             <version>4.4.0</version>
-            <scope>compile</scope>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
@@ -85,7 +105,7 @@
                             <proc>only</proc>
                             <compilerArgs>
                                 <arg>-processor</arg>
-                                <arg>com.github.amatheo.timelinefx.annotation.AnimatedPropertyProcessor</arg>
+                                <arg>io.github.amatheo.timelinefx.annotation.AnimatedPropertyProcessor</arg>
                             </compilerArgs>
                         </configuration>
                     </execution>
@@ -111,5 +131,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

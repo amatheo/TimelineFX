@@ -64,8 +64,16 @@ dependency, [ParticleNativeAPI](https://github.com/fierioziy/ParticleNativeAPI).
 To use TimelineFX in your Paper/Spigot plugin, add it as a dependency in your build system. For Maven, add the following
 to your `pom.xml`:
 
+Repository:
 ```xml
+<repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+</repository>
+```
 
+Dependency:
+```xml
 <dependency>
     <groupId>com.github.amatheo</groupId>
     <artifactId>timelinefx</artifactId>
